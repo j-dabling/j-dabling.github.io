@@ -1,16 +1,14 @@
 body {
-	/*background:url("background.png");
-	background-size:center;
-	background-position:top-center;*/
 	background:url("background.png");
 	background-color:darkred;
 	margin:0;
 	margin-top:0;
 
 	font-family:'open sans',arial,sans-serif;
+	color:white;
 }
 
-a {color:white; padding-left:30px;}
+a {color:white; padding-left:30px; text-decoration: none;}
 a:hover {color:red;}
 a:active {color:darkred;}
 
@@ -23,14 +21,7 @@ a:active {color:darkred;}
 	padding-top:10%;
 	padding-bottom:22%;
 }
-/*
-#projectLd {
-	position:absolute;
-	top:90%;
-	left:50%;
-	transform:translate(-50%,-50%)
-}
-*/
+
 .words {
 	color:white;
 	text-align:center;
@@ -57,10 +48,3 @@ a:active {color:darkred;}
 	padding:50px;
 	list-style-type: none;
 }
-/*
-#projectFeed {
-	position:relative;
-	top:110%;
-	left:50%;
-	transform:translate(-50%,-50%);
-}*/
