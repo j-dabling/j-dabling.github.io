@@ -1,3 +1,6 @@
+/*
+ * General style specifications that apply to all pages.
+ */
 body {
 	background:url("background.png");
 	background-color:darkred;
@@ -12,16 +15,19 @@ a {color:white; padding-left:30px; text-decoration: none;}
 a:hover {color:red;}
 a:active {color:darkred;}
 
-#welcome {
-	height:100%;
-	padding:0;
+ul {
+	list-style-type: none;
+	display:inline-block;
 }
 
-#intro {
-	padding-top:10%;
-	padding-bottom:22%;
+#activePage {
+	/*color:darkred;*/
+	text-decoration: underline;
 }
 
+/*
+ * Styles for the Home page.
+ */
 .words {
 	color:white;
 	text-align:center;
@@ -33,18 +39,63 @@ a:active {color:darkred;}
 	line-height:1px;
 }
 
-.nav-li {
-	display:inline;
+.project {
+	text-align:center;
+	display:inline-block;
+	padding:50px;
+	list-style-type: none;
+}
 
+#welcome {
+	height:100%;
+	padding:0;
+}
+
+#intro {
+	padding-top:10%;
+	padding-bottom:22%;
 }
 
 #portfolio {
 	text-align:center;
 }
 
-.project {
-	text-align:center;
+/*
+ * Styles for the About Me Page.
+ */
+.socialimg {
 	display:inline-block;
+	vertical-align:middle;
+	padding-right:15px;
+}
+.sociallink {
+	display:inline-block;
+}
+
+#aboutme {
+	width:35%;
+	position:absolute;
+	top:10%;
+	left:5%;
+}
+
+#contactme {
+	position:absolute;
+	top:10%;
+	left:55%;
+}
+
+/*
+ * Styles for the Blog page.
+ */
+.blog_post {
+	background-color:rgb(56, 56, 56);
+	margin: 10%;
+	text-align:center;
 	padding:50px;
 	list-style-type: none;
+}
+
+#blog_feed {
+	text-align:center;
 }
