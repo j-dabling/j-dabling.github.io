@@ -8,7 +8,6 @@
   --paragraph-font: "Monofur Nerd Font Mono";
 }
 
-
 body {
     background-color: var(--primary-color);
     color: whitesmoke;
@@ -24,8 +23,6 @@ p {
     color: whitesmoke;
 }
 
-
-
 article {
     max-width: 800px;
     text-align: center;
@@ -37,7 +34,6 @@ article {
     color: whitesmoke;
     font-weight: bold;
 }
-
 
 .logo {
     color: var(--primary-color);
@@ -58,6 +54,82 @@ article {
     height: auto;
 }
 
+.card {
+    display: block;
+    padding:2em;
+    margin: 1em;
+    color: var(--secondary-color);
+    max-width: 350px;
+    text-align: justify;
+    text-decoration: none;
+    border: 2px solid var(--accent1-color);
+    border-radius: 30px;
+}
+
+.card:hover {
+    color: var(--accent2-color);
+}
+
+#logo_link {
+    text-decoration: dashed;
+}
+
+#header-menu {
+    font: 1.5em var(--heading-font);
+    padding: 1em;
+    margin-top: -2em;
+    color: var(--accent1-color);
+}
+
+/* Contact card items (contact.html) */
+.contact_card {
+    /* Colors & Fonts */
+    background-color: #212738;
+    color: whitesmoke;
+    /* font: "Fira Mono, Medium"; */
+    font: 1em "Monofur Nerd Font Mono";
+    /* Framing & Borders */
+    border: 2px solid whitesmoke;
+    border-radius: 30px;
+    /* padding-top: 30px; */
+    padding-bottom: 30px;
+    /* max-width: 400px; */
+    max-width: 50%;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.contact_item {
+    padding: 20px;
+}
+
+#background_img {
+    width: 100%;
+    /* border-radius: 30px; */
+    border-top-left-radius: 25px;
+    border-top-right-radius: 25px;
+}
+
+#bio {
+    margin: -10px;
+}
+
+#contacts {
+    padding-top: 30px;
+    border: 100px;
+    /* border-top-width: 100px; */
+    border-color: white;
+    /* display: inline-flex; */
+}
+
+#email_logo {
+    background-color: whitesmoke;
+    border-radius: 10px;
+    border: 10px;
+}
+
+/* Media calls for screen adjustment. */
 @media screen and (max-width: 2000px) {
     .home-grid {
         display: grid;
@@ -79,72 +151,6 @@ article {
         display: block;
         height: auto;
     }
-}
-
-.card {
-    display: block;
-    padding:3em;
-    color: var(--secondary-color);
-    max-width: 350px;
-    text-align: justify;
-    text-decoration: none;
-}
-
-.card:hover {
-    color: var(--accent2-color);
-}
-
-#logo_link {
-    text-decoration: dashed;
-}
-
-#header-menu {
-    font: 1.5em var(--heading-font);
-    padding: 1em;
-    margin-top: -2em;
-    color: var(--accent1-color);
-}
-
-.contact_card {
-    /* Colors & Fonts */
-    background-color: #212738;
-    color: whitesmoke;
-    /* font: "Fira Mono, Medium"; */
-    font: 1em "Monofur Nerd Font Mono";
-    /* Framing & Borders */
-    border: 2px solid whitesmoke;
-    border-radius: 30px;
-    /* padding-top: 30px; */
-    padding-bottom: 30px;
-    /* max-width: 400px; */
-    max-width: 50%;
-    text-align: center;
-    margin-left: auto;
-    margin-right: auto;
-}
-.contact_item {
-    padding: 20px;
-}
-#background_img {
-    width: 100%;
-    /* border-radius: 30px; */
-    border-top-left-radius: 25px;
-    border-top-right-radius: 25px;
-}
-#bio {
-    margin: -10px;
-}
-#contacts {
-    padding-top: 30px;
-    border: 100px;
-    /* border-top-width: 100px; */
-    border-color: white;
-    /* display: inline-flex; */
-}
-#email_logo {
-    background-color: whitesmoke;
-    border-radius: 10px;
-    border: 10px;
 }
 
 @media screen and (min-width: 800px) {
