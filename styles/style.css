@@ -83,7 +83,13 @@ article {
 
 .card {
     display: block;
-    padding:3em;
+ @media screen and (max-width: 2000px) {
+    .home-grid {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        height: auto;
+    }
+}   padding:3em;
     color: var(--secondary-color);
     max-width: 350px;
     text-align: justify;
@@ -103,4 +109,57 @@ article {
     padding: 1em;
     margin-top: -2em;
     color: var(--accent1-color);
+}
+
+.mycard {
+    /* Colors & Fonts */
+    background-color: #212738;
+    color: whitesmoke;
+    /* font: "Fira Mono, Medium"; */
+    font: 1em "Monofur Nerd Font Mono";
+    /* Framing & Borders */
+    border: 2px solid whitesmoke;
+    border-radius: 30px;
+    /* padding-top: 30px; */
+    padding-bottom: 30px;
+    /* max-width: 400px; */
+    max-width: 50%;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+.contact_item {
+    padding: 20px;
+}
+#background_img {
+    width: 100%;
+    /* border-radius: 30px; */
+    border-top-left-radius: 25px;
+    border-top-right-radius: 25px;
+}
+#bio {
+    margin: -10px;
+}
+#contacts {
+    padding-top: 30px;
+    border: 100px;
+    /* border-top-width: 100px; */
+    border-color: white;
+    /* display: inline-flex; */
+}
+#email_logo {
+    background-color: whitesmoke;
+    border-radius: 10px;
+    border: 10px;
+}
+
+@media screen and (min-width: 800px) {
+    #contacts {
+        padding-top: 30px;
+        border: 100px;
+        /* border-top-width: 100px; */
+        /* border-color: white; */
+        display: none;
+        display: inline-flex;
+    }
 }

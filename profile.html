@@ -1,0 +1,59 @@
+<body style="background-color: blue;">
+    <div class="mycard">
+        <img id="background_img" src="./images/MonkeySuit.jpeg" alt="test">
+        <h2>Jacob Dabling</h2>
+        <p id="bio">Bio line here.</p>
+        <div id="contacts">
+            <section class="contact_item">
+                <img id="email_logo" src="./images/icons8-mail.svg" alt="email logo">    
+                <p>contact@jdabling.dev</p>
+            </section>
+            <section class="contact_item">
+                <img src="images/matrix-logo-white.svg" style="margin-top: 1em;">
+                <p>@morango:matrix.org</p>
+            </section>
+        </div>
+    </div>
+</body>
+
+<style>
+    .mycard {
+        /* Colors & Fonts */
+        background-color: #212738;
+        color: whitesmoke;
+        /* font: "Fira Mono, Medium"; */
+        font: 1em "Monofur Nerd Font Mono";
+        /* Framing & Borders */
+        border: 10px;
+        border-color: whitesmoke;
+        border-radius: 30px;
+        /* padding-top: 30px; */
+        padding-bottom: 30px;
+        max-width: 400px;
+        text-align: center;
+    }
+    .contact_item {
+        padding: 20px;
+    }
+    #background_img {
+        width: 100%;
+        /* border-radius: 30px; */
+        border-top-left-radius: 30px;
+        border-top-right-radius: 30px;
+    }
+    #bio {
+        margin: -10px;
+    }
+    #contacts {
+        padding-top: 30px;
+        border: 100px;
+        /* border-top-width: 100px; */
+        border-color: white;
+        display: inline-flex;
+    }
+    #email_logo {
+        background-color: whitesmoke;
+        border-radius: 10px;
+        border: 10px;
+    }
+</style>
