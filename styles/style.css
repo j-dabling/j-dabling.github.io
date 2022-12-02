@@ -83,13 +83,7 @@ article {
 
 .card {
     display: block;
- @media screen and (max-width: 2000px) {
-    .home-grid {
-        display: grid;
-        grid-template-columns: repeat(3, 1fr);
-        height: auto;
-    }
-}   padding:3em;
+    padding:3em;
     color: var(--secondary-color);
     max-width: 350px;
     text-align: justify;
