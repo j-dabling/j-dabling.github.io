@@ -104,6 +104,7 @@ li {
 /* Contact card items (contact.html) */
 .contact_card {
     /* Colors & Fonts */
+    display: inline-block;
     background-color: #212738;
     font: 1em "Monofur Nerd Font Mono";
     /* Framing & Borders */
@@ -117,12 +118,15 @@ li {
 }
 
 .contact_item {
-    padding: 20px;
+    padding: 10px;
+    display: inline-flex;
 }
 
 .contact_item:hover {
     color: var(--accent1-color);
     color: #D62828;
+    border: #D62828 solid 2px;
+    border-radius: 30px;
 }
 
 #background_img {
@@ -135,16 +139,38 @@ li {
     margin: -10px;
 }
 
-#contacts {
+.contacts {
     padding-top: 30px;
     border: 100px;
     border-color: white;
+    margin-left: auto;
+    margin-right: auto;
+    /* max-width: 10px; */
+    max-width: 75%;
+    text-align: center;
+    /* background-color: #D62828; */
 }
 
 #email_logo {
     background-color: whitesmoke;
     border-radius: 10px;
     border: 10px;
+    margin: 20px;
+    /* margin-top: -3px; */
+}
+
+#email_addr {
+    margin-top: 35px;
+}
+
+#matrix_addr {
+    margin-top: 35px;
+}
+
+#matrix_logo {
+    margin: 20px;
+    /* margin-top: -3px; */
+    padding: 10px;
 }
 
 /* Blog feed */
