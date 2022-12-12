@@ -48,7 +48,7 @@ article {
     padding: 1em;
 }
 
-li {
+.blog_entry {
     display: inline-flex;
 }
 
@@ -118,7 +118,7 @@ li {
 }
 
 .contact_item {
-    padding: 10px;
+    padding: 20px;
     display: inline-flex;
 }
 
